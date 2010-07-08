@@ -1,14 +1,14 @@
 10
 
 dir
-28
+70
 svn://localhost/spr1ngsvn/TheEye/Eye/src/eye/net
 svn://localhost/spr1ngsvn/TheEye
+delete
 
 
-
-2010-07-01T05:35:24.601857Z
-28
+2010-07-08T03:46:20.521097Z
+63
 spr1ng
 
 
@@ -25,38 +25,4 @@ spr1ng
 
 
 8763ed6d-9318-4032-b958-c511fcb819a9
-
-InetUtils.java
-file
-
-
-
-
-2010-07-01T05:00:24.026572Z
-e7f202cff15cf5967def79b7b9e210de
-2010-07-01T05:35:24.601857Z
-28
-spr1ng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1910
 

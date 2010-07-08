@@ -22,13 +22,12 @@ dist.jar=${dist.dir}/eye.jar
 dist.javadoc.dir=${dist.dir}/javadoc
 endorsed.classpath=
 excludes=
-file.reference.db4o-7.12.145.14409-all-java5.jar=libs/db4o-7.12.145.14409-all-java5.jar
+file.reference.db4o-7.12.145.14409-all-java5.jar=../DB4o-Server/libs/db4o-7.12.145.14409-all-java5.jar
 file.reference.log4j-1.2.15.jar=libs\\log4j-1.2.15.jar
 includes=**
 jar.compress=false
 javac.classpath=\
     ${reference.DB4o-Server.jar}:\
-    ${reference.EyeCore.jar}:\
     ${file.reference.log4j-1.2.15.jar}:\
     ${file.reference.db4o-7.12.145.14409-all-java5.jar}
 # Space-separated list of extra javac options
@@ -53,14 +52,12 @@ javadoc.use=true
 javadoc.version=false
 javadoc.windowtitle=
 jaxbwiz.endorsed.dirs="${netbeans.home}/../ide12/modules/ext/jaxb/api"
-main.class=eye.crawler.Crawler
+main.class=eye.Eye
 manifest.file=manifest.mf
 meta.inf.dir=${src.dir}/META-INF
 platform.active=default_platform
 project.DB4o-Server=../DB4o-Server
-project.EyeCore=../EyeCore
 reference.DB4o-Server.jar=${project.DB4o-Server}/dist/DB4o-Server.jar
-reference.EyeCore.jar=${project.EyeCore}/dist/EyeCore.jar
 run.classpath=\
     ${javac.classpath}:\
     ${build.classes.dir}

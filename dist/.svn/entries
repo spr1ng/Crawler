@@ -1,14 +1,14 @@
 10
 
 dir
-19
+70
 svn://localhost/spr1ngsvn/TheEye/Eye/dist
 svn://localhost/spr1ngsvn/TheEye
 
 
 
-2010-06-30T03:16:43.109433Z
-19
+2010-07-08T02:23:31.671869Z
+55
 stream
 
 
@@ -28,38 +28,4 @@ stream
 
 lib
 dir
-
-eye.jar
-file
-28
-
-
-
-2010-07-01T05:27:54.362573Z
-85d087ca1a76141ad806519995e4127a
-2010-07-01T05:35:24.601857Z
-28
-spr1ng
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34123
 

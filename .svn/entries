@@ -1,15 +1,15 @@
 10
 
 dir
-19
+70
 svn://localhost/spr1ngsvn/TheEye/Eye
 svn://localhost/spr1ngsvn/TheEye
 
 
 
-2010-06-30T03:16:43.109433Z
-19
-stream
+2010-07-08T03:48:08.935715Z
+70
+spr1ng
 has-props
 
 
@@ -34,9 +34,6 @@ has-props
 
 
 ()
-
-.git
-dir
 
 dist
 dir
@@ -96,6 +93,40 @@ delete
 19
 stream
 has-props
+
+README
+file
+
+
+
+
+2010-07-02T05:47:28.798565Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-07-06T02:16:08.548992Z
+43
+spr1ng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
 
 build.xml
 file

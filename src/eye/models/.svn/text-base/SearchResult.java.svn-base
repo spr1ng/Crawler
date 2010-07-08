@@ -1,0 +1,49 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package eye.models;
+
+import java.util.List;
+
+/**
+ *
+ * @author spr1ng
+ * @version $Id$
+ */
+public class SearchResult {
+
+    private Image userImage;
+    private List<Image> images;
+
+    public SearchResult(Image userImage, List<Image> images) {
+        this.userImage = userImage;
+        this.images = images;
+    }
+
+    public SearchResult(List<Image> images) {
+        this.images = images;
+    }
+
+    public Image getUserImage() {
+        return userImage;
+    }
+
+    public void setUserImage(Image userImage) {
+        this.userImage = userImage;
+    }
+
+    public List<Image> getImages() {
+        return images;
+    }
+
+    public void setImages(List<Image> images) {
+        this.images = images;
+    }
+
+    public int totalImages(){
+        return images.size();
+    }
+
+}
