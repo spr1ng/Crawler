@@ -19,7 +19,7 @@ import com.db4o.query.Query;
 
 import eye.core.model.Image;
 import eye.core.model.Place;
-import eye.server.manager.impl.DBManagerBasicImpl;
+import eye.server.manager.DBManagerBasicImpl;
 
 /**
  * The Crawler - yet another crawler ;)
@@ -221,28 +221,13 @@ public class Crawler {
         }*/
 
         Crawler eye = new Crawler();
-//        dbm.store(new Place("http://rambler.ru"));
-        dbm.store(new Image("http://localhost/points1.png"));
-        dbm.store(new Image("http://localhost/points2.png"));
-        dbm.store(new Image("http://localhost/points3.png"));
-        dbm.store(new Image("http://localhost/points4.png"));
-        dbm.store(new Image("http://localhost/points5.png"));
-        dbm.store(new Image("http://localhost/points6.jpg"));
-        dbm.store(new Image("http://localhost/points7.jpg"));
-        dbm.store(new Image("http://localhost/points8.jpg"));
-        dbm.store(new Image("http://localhost/medved1.jpg"));
-        dbm.store(new Image("http://localhost/medved2.jpg"));
-        dbm.store(new Image("http://localhost/medved3.jpg"));
-        dbm.store(new Image("http://localhost/medved4.jpg"));
-        dbm.store(new Image("http://localhost/medved5.jpg"));
-        dbm.store(new Image("http://localhost/logo.png"));
-        dbm.store(new Image("http://localhost/logo2.png"));
+        dbm.store(new Place("http://rambler.ru"));
 //        eye.watchDb();
 //        eye.run();
-       /* while (true) {
+       while (true) {
             eye.run();
             Thread.sleep(1000);
-        }*/
+        }
         /*URL u = new URL("http://ya.ru");
         pageSource = eye.getPageSource(u);
         domain = u.getHost();

@@ -19,12 +19,13 @@ import com.db4o.query.Query;
 
 import eye.core.model.Image;
 import eye.core.model.Place;
-import eye.server.manager.impl.DBManagerBasicImpl;
+import eye.core.util.InetUtils;
+import eye.server.manager.DBManagerBasicImpl;
 
 /**
  * The Crawler - yet another crawler ;)
  * @author gpdribbler, spr1ng
- * @version $Id: Crawler.java 62 2010-07-08 03:44:15Z spr1ng $
+ * @version $Id: Crawler.java 76 2010-07-08 05:31:17Z stream $
  */
 public class Crawler {
     private static final Logger LOG = Logger.getLogger(Crawler.class);
@@ -215,31 +216,25 @@ public class Crawler {
 
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
-        /*if (!hasInetConnection()) {
+        if (!InetUtils.hasInetConnection()) {
             LOG.error("Inet is unreachable! =(");
             System.exit(1);
-        }*/
+        }
 
         Crawler eye = new Crawler();
-//        dbm.store(new Place("http://rambler.ru"));
-        dbm.store(new Image("http://localhost/points1.png"));
-        dbm.store(new Image("http://localhost/points2.png"));
-        dbm.store(new Image("http://localhost/points3.png"));
-        dbm.store(new Image("http://localhost/points4.png"));
-        dbm.store(new Image("http://localhost/points5.png"));
-        dbm.store(new Image("http://localhost/points6.jpg"));
-        dbm.store(new Image("http://localhost/points7.jpg"));
-        dbm.store(new Image("http://localhost/points8.jpg"));
-        dbm.store(new Image("http://localhost/medved1.jpg"));
-        dbm.store(new Image("http://localhost/medved2.jpg"));
-        dbm.store(new Image("http://localhost/medved3.jpg"));
-        dbm.store(new Image("http://localhost/medved4.jpg"));
-        dbm.store(new Image("http://localhost/medved5.jpg"));
-        dbm.store(new Image("http://localhost/logo.png"));
-        dbm.store(new Image("http://localhost/logo2.png"));
+//        dbm.store(new Place("http://wallpapers-best.ru"));
+//        dbm.store(new Place("http://gee.ru"));
+        for (int i = 1; i <= 9; i++) {
+            dbm.store(new Image("http://localhost/points" + i + ".jpg"));
+            dbm.store(new Image("http://localhost/points" + i + ".png"));
+            dbm.store(new Image("http://localhost/medved" + i + ".jpg"));
+            dbm.store(new Image("http://localhost/medved" + i + ".png"));
+            dbm.store(new Image("http://localhost/logo.png"));
+        }
+        
 //        eye.watchDb();
 //        eye.run();
-       /* while (true) {
+        /*while (true) {
             eye.run();
             Thread.sleep(1000);
         }*/
